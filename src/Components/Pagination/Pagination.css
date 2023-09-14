@@ -1,0 +1,37 @@
+* {
+  list-style: none;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-link {
+  background: transparent;
+  border: none;
+  color: white;
+  border-radius: 50%;
+  transition: 0.5s;
+  padding: 5px 10px;
+}
+
+.active,
+.page-link:hover {
+  background: #105f47;
+  color: white;
+  text-decoration: none;
+}
+
+.arrrow {
+  color: #e9312b;
+}
+
+.nextPrev {
+  text-decoration: none;
+  color: white;
+  margin: 0 5px;
+}
+
+.nextPrev:hover {
+  color: #105f47;
+}

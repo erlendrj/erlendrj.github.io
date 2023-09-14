@@ -1,0 +1,7 @@
+.App {
+  height: 100%;
+  min-width: 100vw;
+  background: url("./Pages/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

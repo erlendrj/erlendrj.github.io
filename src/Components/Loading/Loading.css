@@ -1,0 +1,85 @@
+.loading-div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  height: 400px;
+}
+
+.loading {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin: auto;
+  position: relative;
+}
+.first-dot {
+  background-color: #d0bd87;
+  left: 0;
+  top: 0;
+  animation: first 1s infinite linear;
+  transform-origin: 5px 40px;
+}
+
+.second-dot {
+  right: 0;
+  bottom: 0;
+  animation: second 1.2s infinite linear;
+}
+
+.third-dot {
+  animation: first 1.4s infinite linear;
+  background: black;
+}
+
+.text-loading {
+  position: relative;
+  bottom: 0;
+  animation: shine 2s infinite;
+  margin-top: 100px;
+  font-size: 40px;
+  text-align: center;
+
+  background: linear-gradient(
+    to right,
+    #fff 20%,
+    black 40%,
+    black 60%,
+    #fff 80%
+  );
+  background-size: 200% auto;
+
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes first {
+  from {
+    transform: rotate(0deg) translateY(60px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateY(60px) rotate(-360deg);
+  }
+}
+
+@keyframes second {
+  from {
+    transform: rotate(0deg) translateY(60px) rotate(0deg);
+    background: #d0bd87;
+  }
+  to {
+    transform: rotate(-360deg) translateY(60px) rotate(360deg);
+    background: black;
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
