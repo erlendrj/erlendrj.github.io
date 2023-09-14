@@ -1,0 +1,8 @@
+{
+  "short_name": "TB-Chess",
+  "name": "Tb-Chess Thales",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

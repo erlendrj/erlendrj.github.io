@@ -1,0 +1,87 @@
+.login-main {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.7);
+  min-height: 600px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login-form > div {
+  width: 80%;
+}
+
+.input-div {
+  margin: 20px;
+}
+
+.btn {
+  width: 30%;
+  margin: 20px;
+  margin: auto;
+}
+
+.input-login {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid black;
+  color: black !important;
+  padding: 7px 0;
+  font-size: 1.3rem;
+  width: 100%;
+  outline: 0;
+}
+
+.input-login:focus {
+  border-bottom: 1px solid transparent !important;
+  border-image: linear-gradient(
+    0.25turn,
+    rgba(255, 249, 34),
+    rgba(255, 0, 128),
+    rgba(56, 2, 155, 0)
+  ) !important;
+  border-image-slice: 1 !important;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  font-size: 1.1rem;
+}
+
+button:hover {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
+    0.25turn,
+    rgba(255, 249, 34),
+    rgba(255, 0, 128),
+    rgba(56, 2, 155, 0)
+  );
+  border-image-slice: 1;
+}
+
+.incorrect-password {
+  background: rgba(255, 0, 0, 0.4);
+  padding: 10px;
+  color: rgba(30, 30, 30, 1);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+@media all and (max-width: 550px) {
+}

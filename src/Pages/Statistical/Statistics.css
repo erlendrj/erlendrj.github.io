@@ -1,0 +1,95 @@
+.main-stats {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.main-home {
+  align-items: center;
+}
+
+.charts-part {
+  display: flex;
+  width: 100%;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  padding: 1em;
+}
+
+.charts {
+  width: 30%;
+  background: rgba(255, 255, 255, 0.7);
+  color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 10px;
+}
+.charts > h1 {
+  color: black;
+}
+
+.win {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.line-chart {
+  width: 90%;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+canvas {
+  color: white;
+}
+
+select {
+  width: 80%;
+  margin: 20px;
+  border: none;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(to right, #37b689, #93c942);
+  border-image-slice: 1;
+  font-size: 1.4em;
+  background: transparent;
+  color: white;
+}
+.select-div {
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+@media all and (max-width: 550px) {
+  .charts-part {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0;
+  }
+  .charts {
+    width: 80%;
+    min-height: fit-content;
+  }
+  .select-div {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media all and (min-width: 650px) and (max-width: 820px) {
+  canvas {
+    height: 400px !important;
+    width: 80% !important;
+    margin: auto !important;
+  }
+}
